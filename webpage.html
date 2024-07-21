@@ -1,0 +1,53 @@
+<!DOCTYPE html >
+<html>
+<head lang="en">
+    <title>IP_Address</title>
+    <style>
+        body, html {
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;} 
+        img { position: absolute;}
+        .form{ position: absolute;  z-index: 4; }
+        .ip_add{background-color: gray; 
+                padding: 10px;
+                margin: 10px 0;
+                cursor: alias;
+                }
+        .btn{background-color: #F4C351; border-color:#F4C351; }
+        .package{display: grid;
+                 place-items: center;
+                 z-index: 2;}
+        video{top:0;
+              left:0;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              z-index: 1;}         
+        img{width:40%; height: 60%; filter: blur(2px); opacity: 0.7; border:1px; border-color:gray; z-index: 3;}  
+        .txt{color:white;}  
+</style>
+
+</head>
+<body >
+    
+    <div class="cont">
+       <div class="package">
+            <img src="Un.png" class="img"  />
+            <form class="form" method="post" action="web2.html" >
+            <h3 class="txt">Enter IP Address </h3>
+            <input type="text" name="IP"  class="ip_add">
+            <br/><br/>
+            
+            <input type="submit" name="btn" value="get info" class="btn" action="web2.html">
+            </form>
+            
+            <video src="vid.mp4" class="vid"  autoplay muted loop></video>
+    </div>
+
+
+
+</body>
+</html>
+
+ 
